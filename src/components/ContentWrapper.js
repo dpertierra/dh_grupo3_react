@@ -1,6 +1,7 @@
 import React from "react";
 import ContentRowTop from "./ContentRowTop";
 import TopBar from "./TopBar";
+import MovieList from "./MovieList";
 import Footer from "./Footer";
 
 function ContentWrapper() {
@@ -9,6 +10,7 @@ function ContentWrapper() {
 			<div id="content">
 				<TopBar />
 				<ContentRowTop />
+				<MovieList />
 				<Footer />
 			</div>
 		</div>
