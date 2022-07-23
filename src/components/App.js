@@ -1,4 +1,5 @@
 import "../assets/css/app.css";
+import "../assets/css/style.css";
 import SideBar from "./SideBar";
 import ContentWrapper from "./ContentWrapper";
 

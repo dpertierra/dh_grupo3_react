@@ -3,7 +3,7 @@ import React from "react";
 function SideBar() {
 	return (
 		<ul
-			className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion"
+			className="navbar-nav sidebar sidebar-dark accordion sidebar-bg"
 			id="accordionSidebar"
 		>
 			<a
@@ -13,7 +13,7 @@ function SideBar() {
 				<div className="sidebar-brand-icon">
 					<img
 						className="w-100"
-						src={require("../assets/images/logo-DH.png")}
+						src={require("../assets/images/logo.png")}
 						alt="Digital House"
 					/>
 				</div>
@@ -24,7 +24,7 @@ function SideBar() {
 			<li className="nav-item active">
 				<a className="nav-link" href="/">
 					<i className="fas fa-fw fa-tachometer-alt"></i>
-					<span>Dashboard - DH movies</span>
+					<span>Dashboard - Las Violetas</span>
 				</a>
 			</li>
 
