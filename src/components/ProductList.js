@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Movie from "./Products";
+import Product from "./Product";
 
 export class ProductList extends Component {
 	constructor(props) {
@@ -11,7 +11,7 @@ export class ProductList extends Component {
 	componentDidMount() {
 		fetch("http://localhost:3001/api/products")
 			.then((response) => response.json())
-			.then((data) => this.setState({ products: data.data }))
+			.then((data) => this.setState({ products: data.products }))
 			.catch((error) => console.log(error));
 	}
 	render() {
@@ -35,25 +35,25 @@ export class ProductList extends Component {
 								<thead>
 									<tr>
 										<th>Id</th>
-										<th>Titulo</th>
-										<th>Calificación</th>
-										<th>Premios</th>
-										<th>Duración</th>
+										<th>Nombre</th>
+										<th>Categoria</th>
+										<th>Descripcion</th>
+										<th>Precio</th>
 									</tr>
 								</thead>
 								<tfoot>
 									<tr>
 										<th>Id</th>
-										<th>Titulo</th>
-										<th>Calificación</th>
-										<th>Premios</th>
-										<th>Duración</th>
+										<th>Nombre</th>
+										<th>Categoria</th>
+										<th>Descripcion</th>
+										<th>Precio</th>
 									</tr>
 								</tfoot>
 								<tbody>
 									{this.state.products.map((product, index) => {
 										console.log(product);
-										return <Movie key={index} {...product} />;
+										return <Product key={index} {...product} />;
 									})}
 								</tbody>
 							</table>
