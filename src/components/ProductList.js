@@ -52,7 +52,6 @@ export class ProductList extends Component {
 								</tfoot>
 								<tbody>
 									{this.state.products.map((product, index) => {
-										console.log(product);
 										return <Product key={index} {...product} />;
 									})}
 								</tbody>
