@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
+import {useState} from 'react';
 
-componentDidMount();{
+const estado = useState ([
 	fetch("http://localhost:3001/api/products")
 	.then(response => response.json())
-	.then(data =>this.state({ categories: data.countByCategory}));
-}
-function CategoriesInDb(props) {
+	.then(data =>this.state({ categories: data.countByCategory}))
+]);
+const categoriesList = estado[0];
+const setCategoriesList =  estado[1];
+
+function CategoriesInDb() {
+	const [category];
+
+	useState([categoriesList, setCategoriesList])
 	return (
 		<div className="col-lg-6 mb-4">
 			<div className="card shadow mb-4">
