@@ -1,10 +1,10 @@
 import React from "react";
 import ContentRowMovies from "./ContentRowMovies";
-import GenresInDb from "./GenresInDb";
+import CategoriesInDb from "./CategoriesInDb";
 import LastMovieInDb from "./LastMovieInDb";
 function ContentRowTop() {
 
-	let genres = [
+	let categories = [
 		"Acción",
 		"Animación",
 		"Aventura",
@@ -36,7 +36,7 @@ function ContentRowTop() {
 						aperiam voluptatum?"
 					alt="Star Wars - Mandalorian"
 				/>
-				<GenresInDb genres={genres} />
+				<CategoriesInDb categories={categories} />
 			</div>
 		</div>
 	);
