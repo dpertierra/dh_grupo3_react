@@ -24,3 +24,6 @@
 .card-text-dark {
 	color: rgb(var(--clr-dark));
 }
+.card-bg {
+	background-color: rgb(var(--clr-dark));
+}
