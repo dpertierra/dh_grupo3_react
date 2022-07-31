@@ -12,3 +12,15 @@
 .sidebar-bg {
 	background-color: rgb(var(--clr-dark));
 }
+
+.category-card {
+	display: flex;
+	justify-content: space-between;
+}
+.card-text {
+	color: rgb(var(--clr-white));
+}
+
+.card-text-dark {
+	color: rgb(var(--clr-dark));
+}
