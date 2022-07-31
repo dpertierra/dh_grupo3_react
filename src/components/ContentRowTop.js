@@ -3,19 +3,6 @@ import ContentRowMovies from "./ContentRowMovies";
 import CategoriesInDb from "./CategoriesInDb";
 import LastMovieInDb from "./LastMovieInDb";
 function ContentRowTop() {
-
-	let categories = [
-		"Acción",
-		"Animación",
-		"Aventura",
-		"Ciencia Ficción",
-		"Comedia",
-		"Documental",
-		"Drama",
-		"Fantasia",
-		"Infantiles",
-		"Musical",
-	];
 	return (
 		<div className="container-fluid">
 			<div className="d-sm-flex align-items-center justify-content-between mb-4">
@@ -36,7 +23,7 @@ function ContentRowTop() {
 						aperiam voluptatum?"
 					alt="Star Wars - Mandalorian"
 				/>
-				<CategoriesInDb categories={categories} />
+				<CategoriesInDb />
 			</div>
 		</div>
 	);
