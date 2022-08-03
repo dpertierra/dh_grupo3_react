@@ -2,11 +2,10 @@ import React from "react";
 
 export function Product(props) {
 	function deleteProduct() {
-		console.log("DELETE");
 		fetch("http://localhost:3001/api/products/delete/" + props.id, {
 			method: "POST",
 		})
-			.then((response) => response.json())
+			.then(props.updateTable())
 			.catch((error) => console.log(error));
 	}
 	return (

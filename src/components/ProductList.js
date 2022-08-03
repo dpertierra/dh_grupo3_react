@@ -9,13 +9,13 @@ function ProductList() {
 			.then((data) => setProducts(data.products))
 			.catch((error) => console.log(error));
 	});
-	// useEffect(() => {
-	// 	console.log("cambie");
-	// 	fetch("http://localhost:3001/api/products")
-	// 		.then((response) => response.json())
-	// 		.then((data) => setProducts(data.products))
-	// 		.catch((error) => console.log(error));
-	// }, [products]);
+	function updateTable() {
+		fetch("http://localhost:3001/api/products")
+			.then((response) => response.json())
+			.then((data) => setProducts(data.products))
+			.catch((error) => console.log(error));
+	}
+
 	return (
 		<React.Fragment>
 			{/*<!-- PRODUCTS LIST -->*/}
@@ -55,7 +55,13 @@ function ProductList() {
 							</tfoot>
 							<tbody>
 								{products.map((product, index) => {
-									return <Product key={index} {...product} />;
+									return (
+										<Product
+											key={index}
+											{...product}
+											updateTable={updateTable}
+										/>
+									);
 								})}
 							</tbody>
 						</table>
