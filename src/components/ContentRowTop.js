@@ -1,21 +1,8 @@
 import React from "react";
 import ContentRow from "./ContentRow";
-import GenresInDb from "./GenresInDb";
+import CategoriesInDb from "./CategoriesInDb";
 import LastMovieInDb from "./LastMovieInDb";
 function ContentRowTop() {
-
-	let genres = [
-		"Acción",
-		"Animación",
-		"Aventura",
-		"Ciencia Ficción",
-		"Comedia",
-		"Documental",
-		"Drama",
-		"Fantasia",
-		"Infantiles",
-		"Musical",
-	];
 	return (
 		<div className="container-fluid">
 			<div className="d-sm-flex align-items-center justify-content-between mb-4">
@@ -36,7 +23,7 @@ function ContentRowTop() {
 						aperiam voluptatum?"
 					alt="Star Wars - Mandalorian"
 				/>
-				<GenresInDb genres={genres} />
+				<CategoriesInDb />
 			</div>
 		</div>
 	);
