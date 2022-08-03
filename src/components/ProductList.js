@@ -9,12 +9,13 @@ function ProductList() {
 			.then((data) => setProducts(data.products))
 			.catch((error) => console.log(error));
 	});
-	useEffect(() => {
-		fetch("http://localhost:3001/api/products")
-			.then((response) => response.json())
-			.then((data) => setProducts(data.products))
-			.catch((error) => console.log(error));
-	}, [products]);
+	// useEffect(() => {
+	// 	console.log("cambie");
+	// 	fetch("http://localhost:3001/api/products")
+	// 		.then((response) => response.json())
+	// 		.then((data) => setProducts(data.products))
+	// 		.catch((error) => console.log(error));
+	// }, [products]);
 	return (
 		<React.Fragment>
 			{/*<!-- PRODUCTS LIST -->*/}
