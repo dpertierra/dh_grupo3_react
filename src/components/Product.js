@@ -1,6 +1,14 @@
 import React from "react";
 
 export function Product(props) {
+	function deleteProduct() {
+		console.log("DELETE");
+		fetch("http://localhost:3001/api/products/delete/" + props.id, {
+			method: "POST",
+		})
+			.then((response) => response.json())
+			.catch((error) => console.log(error));
+	}
 	return (
 		<React.Fragment>
 			<tr>
@@ -9,6 +17,22 @@ export function Product(props) {
 				<td>{props.category}</td>
 				<td>{props.description}</td>
 				<td>${props.price}</td>
+				<td>
+					<div className="actions">
+						<button className="action-button">
+							<i className="fa-solid fa-plus"></i>
+						</button>
+						<button className="action-button">
+							<i className="fa-solid fa-pen-to-square"></i>
+						</button>
+						<button
+							className="action-button trash-icon"
+							onClick={() => deleteProduct()}
+						>
+							<i className="fa-solid fa-trash-can trash-icon"></i>
+						</button>
+					</div>
+				</td>
 			</tr>
 		</React.Fragment>
 	);
