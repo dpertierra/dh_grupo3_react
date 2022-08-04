@@ -17,7 +17,7 @@ function ProductList() {
 	}
 
 	return (
-		<React.Fragment>
+		<div className="container-fluid">
 			{/*<!-- PRODUCTS LIST -->*/}
 			<h1 className="h3 mb-2 text-gray-800">
 				All the products in the Database
@@ -68,7 +68,7 @@ function ProductList() {
 					</div>
 				</div>
 			</div>
-		</React.Fragment>
+		</div>
 	);
 }
 
