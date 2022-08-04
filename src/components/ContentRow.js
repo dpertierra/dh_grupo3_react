@@ -25,10 +25,10 @@ function ContentRow() {
 
 		let newCards = cards.map((card) => {
 			switch (card.name) {
-				case "products":
-					return { ...card, amount: userJson.count };
 				case "users":
 					return { ...card, amount: userJson.count };
+				case "products":
+					return { ...card, amount: productsJson.count };
 				case "categories":
 					return { ...card, amount: productsJson.countByCategory.length };
 				default:

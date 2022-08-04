@@ -51,3 +51,12 @@ a:-webkit-any-link {
 .trash-icon {
 	color: var(--clr-red);
 }
+
+.card-border-left {
+	border-left: 0.25rem solid rgb(var(--clr-accent));
+}
+
+.icon-color,
+.title {
+	color: rgb(var(--clr-accent));
+}

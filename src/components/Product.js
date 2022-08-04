@@ -13,7 +13,7 @@ export function Product(props) {
 			<tr>
 				<td>{props.id}</td>
 				<td>{props.name}</td>
-				<td>{props.category}</td>
+				<td>{props.category === "room" ? "Habitación" : "Actividad"}</td>
 				<td>{props.description}</td>
 				<td>${props.price}</td>
 				<td>
