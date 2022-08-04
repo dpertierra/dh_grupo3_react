@@ -36,7 +36,7 @@ function ProductList() {
 									<th>Id</th>
 									<th>Nombre</th>
 									<th>Categoria</th>
-									<th>Descripcion</th>
+									<th>Descripción</th>
 									<th>Precio</th>
 									<th>Acciones</th>
 								</tr>
@@ -46,7 +46,7 @@ function ProductList() {
 									<th>Id</th>
 									<th>Nombre</th>
 									<th>Categoria</th>
-									<th>Descripcion</th>
+									<th>Descripción</th>
 									<th>Precio</th>
 									<th>Acciones</th>
 								</tr>
