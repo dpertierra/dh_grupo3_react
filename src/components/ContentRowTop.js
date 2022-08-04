@@ -1,7 +1,7 @@
 import React from "react";
 import ContentRow from "./ContentRow";
 import CategoriesInDb from "./CategoriesInDb";
-import LastMovieInDb from "./LastMovieInDb";
+import LastMovieInDb from "./LastProduct";
 function ContentRowTop() {
 	return (
 		<div className="container-fluid">
