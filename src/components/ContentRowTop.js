@@ -1,7 +1,7 @@
 import React from "react";
 import ContentRow from "./ContentRow";
 import CategoriesInDb from "./CategoriesInDb";
-import LastMovieInDb from "./LastProduct";
+import LastProduct from "./LastProduct";
 function ContentRowTop() {
 	return (
 		<div className="container-fluid">
@@ -10,19 +10,8 @@ function ContentRowTop() {
 			</div>
 			<ContentRow />
 
-			{/* <!-- Content Row Last Movie in Data Base --> */}
 			<div className="row">
-				<LastMovieInDb
-					title="Mandalorian"
-					image="mandalorian.jpg"
-					description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-						consequatur explicabo officia inventore libero veritatis iure
-						voluptate reiciendis a magnam, vitae, aperiam voluptatum non
-						corporis quae dolorem culpa citationem ratione aperiam voluptatum
-						non corporis ratione aperiam voluptatum quae dolorem culpa ratione
-						aperiam voluptatum?"
-					alt="Star Wars - Mandalorian"
-				/>
+				<LastProduct />
 				<CategoriesInDb />
 			</div>
 		</div>

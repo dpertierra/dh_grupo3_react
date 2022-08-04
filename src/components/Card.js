@@ -25,14 +25,12 @@ function Card(props) {
 }
 
 Card.defaultProps = {
-	borderColor: "border-left-success",
 	icon: "fa-clipboard-list",
 	amount: 0,
 	title: "No title",
 };
 
 Card.propTypes = {
-	borderColor: PropTypes.string,
 	icon: PropTypes.string,
 	amount: PropTypes.number,
 	title: PropTypes.string,
