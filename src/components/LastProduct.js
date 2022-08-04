@@ -23,7 +23,7 @@ function LastProduct() {
 						/>
 					</div>
 					<p>{product.description}</p>
-					<a className="btn btn-accent" target="_blank" rel="nofollow" href={product.detail}>
+					<a className="btn btn-accent" target="_blank" rel="nofollow noreferrer" href={product.detail}>
 						Ver detalle del producto
 					</a>
 				</div>
