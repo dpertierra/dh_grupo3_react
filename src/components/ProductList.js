@@ -19,7 +19,7 @@ function ProductList() {
 	return (
 		<div className="container-fluid">
 			{/*<!-- PRODUCTS LIST -->*/}
-			<h1 className="h3 mb-2 text-gray-800">
+			<h1 className="h3 mb-2 title">
 				All the products in the Database
 			</h1>
 
