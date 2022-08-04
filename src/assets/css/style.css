@@ -60,3 +60,12 @@ a:-webkit-any-link {
 .title {
 	color: rgb(var(--clr-accent));
 }
+
+.btn-accent {
+	background-color: rgb(var(--clr-accent));
+	color: rgb(var(--clr-white));
+	transition: filter 250ms ease-in-out;
+}
+.btn-accent:hover {
+	filter: brightness(1.15);
+}

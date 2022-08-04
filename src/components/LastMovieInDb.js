@@ -17,7 +17,7 @@ function LastMovieInDb(props) {
 						/>
 					</div>
 					<p>{props.description}</p>
-					<a className="btn btn-danger" target="_blank" rel="nofollow" href="/">
+					<a className="btn btn-accent" target="_blank" rel="nofollow" href="/">
 						View movie detail
 					</a>
 				</div>
