@@ -5,7 +5,7 @@ function LastMovieInDb(props) {
 		<div className="col-lg-6 mb-4">
 			<div className="card shadow mb-4">
 				<div className="card-header py-3">
-					<h5 className="m-0 font-weight-bold text-gray-800">{props.title}</h5>
+					<h5 className="m-0 font-weight-bold title">{props.title}</h5>
 				</div>
 				<div className="card-body">
 					<div className="text-center">
@@ -17,7 +17,7 @@ function LastMovieInDb(props) {
 						/>
 					</div>
 					<p>{props.description}</p>
-					<a className="btn btn-accent" target="_blank" rel="nofollow" href="/">
+					<a className="btn btn-accent" target="_blank" rel="nofollow" href="#">
 						View movie detail
 					</a>
 				</div>
