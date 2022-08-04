@@ -21,6 +21,10 @@
 	color: rgb(var(--clr-white));
 }
 
+.title {
+	color: rgb(var(--clr-dark));
+}
+
 .card-text-dark {
 	color: rgb(var(--clr-dark));
 }
@@ -57,7 +61,7 @@ a:-webkit-any-link {
 }
 
 .icon-color,
-.title {
+.card-title {
 	color: rgb(var(--clr-accent));
 }
 
@@ -68,4 +72,5 @@ a:-webkit-any-link {
 }
 .btn-accent:hover {
 	filter: brightness(1.15);
+	color: rgb(var(--clr-white));
 }
