@@ -12,8 +12,6 @@ function ProductList() {
 			.then((data) => {
 				data.products && setProducts(data.products);
 				data.pageTotal && setPageTotal(data.pageTotal);
-				console.log(data);
-				console.log(pageTotal);
 			})
 			.catch((error) => console.log(error));
 	}
