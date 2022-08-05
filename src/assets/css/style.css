@@ -74,3 +74,14 @@ a:-webkit-any-link {
 	filter: brightness(1.15);
 	color: rgb(var(--clr-white));
 }
+
+.pager {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.pager button {
+	display: flex;
+	align-items: center;
+	gap: 0.45rem;
+}

@@ -3,18 +3,21 @@ import Product from "./Product";
 
 function ProductList() {
 	const [products, setProducts] = useState([]);
-	useEffect(() => {
-		fetch("http://localhost:3001/api/products")
-			.then((response) => response.json())
-			.then((data) => setProducts(data.products))
-			.catch((error) => console.log(error));
-	});
-	function updateTable() {
-		fetch("http://localhost:3001/api/products")
+	const [page, setPage] = useState(1);
+
+	function getProducts() {
+		fetch("http://localhost:3001/api/products/" + page)
 			.then((response) => response.json())
 			.then((data) => setProducts(data.products))
 			.catch((error) => console.log(error));
 	}
+
+	function updateTable() {
+		getProducts();
+	}
+	useEffect(() => {
+		updateTable();
+	}, [page]);
 
 	return (
 		<div className="container-fluid">
@@ -63,6 +66,24 @@ function ProductList() {
 								})}
 							</tbody>
 						</table>
+						<div className="pager">
+							<button
+								className="btn btn-accent"
+								onClick={() => (page > 1 ? setPage(page - 1) : null)}
+							>
+								<i className="fa-solid fa-arrow-left"></i>
+								Previa
+							</button>
+							<button
+								className="btn btn-accent"
+								onClick={() => {
+									setPage(page + 1);
+								}}
+							>
+								<span>Siguiente</span>
+								<i className="fa-solid fa-arrow-right"></i>
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
