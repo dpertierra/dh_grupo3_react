@@ -70,8 +70,12 @@ a:-webkit-any-link {
 	color: rgb(var(--clr-white));
 	transition: filter 250ms ease-in-out;
 }
-.btn-accent:hover {
+.btn-accent:enabled:hover {
 	filter: brightness(1.15);
+	color: rgb(var(--clr-white));
+}
+
+.btn-accent[disabled]:hover {
 	color: rgb(var(--clr-white));
 }
 

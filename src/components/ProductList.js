@@ -4,11 +4,17 @@ import Product from "./Product";
 function ProductList() {
 	const [products, setProducts] = useState([]);
 	const [page, setPage] = useState(1);
+	const [pageTotal, setPageTotal] = useState(1);
 
 	function getProducts() {
 		fetch("http://localhost:3001/api/products/" + page)
 			.then((response) => response.json())
-			.then((data) => setProducts(data.products))
+			.then((data) => {
+				data.products && setProducts(data.products);
+				data.pageTotal && setPageTotal(data.pageTotal);
+				console.log(data);
+				console.log(pageTotal);
+			})
 			.catch((error) => console.log(error));
 	}
 
@@ -70,6 +76,7 @@ function ProductList() {
 							<button
 								className="btn btn-accent"
 								onClick={() => (page > 1 ? setPage(page - 1) : null)}
+								disabled={page > 1 ? false : true}
 							>
 								<i className="fa-solid fa-arrow-left"></i>
 								Previa
@@ -77,8 +84,9 @@ function ProductList() {
 							<button
 								className="btn btn-accent"
 								onClick={() => {
-									setPage(page + 1);
+									page < pageTotal && setPage(page + 1);
 								}}
+								disabled={page < pageTotal ? false : true}
 							>
 								<span>Siguiente</span>
 								<i className="fa-solid fa-arrow-right"></i>
