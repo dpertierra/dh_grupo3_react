@@ -26,8 +26,13 @@ function ProductList() {
 	return (
 		<div className="container-fluid">
 			{/*<!-- PRODUCTS LIST -->*/}
-			<h1 className="h3 mb-2 title">Todos los Productos</h1>
-
+			<div className="container-title">
+				<h1 className="h3 mb-2 title">Todos los Productos</h1>
+				<button className="btn btn-accent btn-new">
+					Crear Producto
+					<i className="fa-solid fa-plus"></i>
+				</button>
+			</div>
 			{/*<!-- DataTales Example -->*/}
 			<div className="card shadow mb-4">
 				<div className="card-body">

@@ -19,9 +19,6 @@ export function Product(props) {
 				<td>
 					<div className="actions">
 						<button className="action-button">
-							<i className="fa-solid fa-plus"></i>
-						</button>
-						<button className="action-button">
 							<i className="fa-solid fa-pen-to-square"></i>
 						</button>
 						<button

@@ -89,3 +89,12 @@ a:-webkit-any-link {
 	align-items: center;
 	gap: 0.45rem;
 }
+.container-title {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.5rem;
+	gap: 1rem;
+}
+.btn-new {
+	margin-bottom: 8px;
+}
